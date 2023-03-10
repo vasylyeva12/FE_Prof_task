@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+ //Выведите с помощью цикла столбец чисел от 1 до 100
+
+//  for (let index = 1; index <= 100; index++) {
+//     console.log(index);  
+    
+//  }
+
+//Выведите с помощью цикла столбец чисел от 100 до 1.
+
+// for (let index = 100; index >= 1; index--) {
+//    console.log(index);
+    
+// }
+//3. Выведите с помощью цикла столбец четных чисел от 1 до 100
+
+// for (let index = 1; index <=100; index++) {
+//     if (index % 2 ===0) {
+//         console.log(index);  
+//     }       
+// }
+
+// 4. Заполните массив 10-ю иксами с помощью цикла
+// let arr = [];
+// for (let index = 0; index <10; index++) {
+//     arr[index] = "x"
+// //   arr.push(index) 
+   
+// }
+// console.log(arr);
+
+//5. Заполните массив числами от 1 до 10 с помощью цикла.
+
+// let arr = [];
+
+// for (let index = 1; index <= 10; index++) {
+   
+//     arr.push(index)
+      
+// }
+// console.log(arr);
+
+// 6. Заполните массив 10-ю случайными числами (дробями) от 0 до 1 с помощью цикла. Дроби округляйте до двух знаков в дробной части.
+
+// let random = [];
+// for (let index = 0; index < 1; index += 0.1) {
+//     random.push(index.toFixed(2)) 
+//  }
+// console.log(random);
+
+// 7. Заполните массив 10-ю случайными числами от 1 до 10 с помощью цикла.
+// let random = [];
+// for (let index = 1; index <= 10; index++) {
+//     random.push(index)    
+// }
+// console.log(random);
+
+// 8. Дан массив с числами. С помощью цикла выведите только те элементы массива, которые больше нуля и меньше 10-ти
+
+// let value = [2, 56, -5, 65, 6, 9, 1, 0, 77, -2]
+
+// for (let index = 0; index < value.length; index++) {
+//     if (value[index] > 0 && value[index] < 10) {
+//         console.log(value[index]);  
+//     }
+    
+// }
+
+// 9. Дан массив с числами. С помощью цикла проверьте, что в нем есть элемент со значением 5. Как только будет найден первый такой элемент - выведите 'Есть' и оборвите цикл. Если такого элемента нет - ничего не выводите.
+
+// let value = [2, 56, 5, 65, 6, 9, 1, 0, 77, -2]
+
+// for (let index = 0; index < value.length; index++) {
+//     if (value[index]===5) {
+//         console.log("Hier");
+        
+//     } else {
+        
+//     }    
+// }
+
+// 10. Дан массив с числами. С помощью цикла найдите сумму элементов этого массива. 
+// let value = [2, 56, 5, 65, 6, 9, 1, 0, 77, -2]
+// let valueSum = 0;
+
+// for (let index = 0; index < value.length; index++) {
+//     const element = value[index];
+//     valueSum += element      
+// }
+// console.log(valueSum);
+
+// 11. Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива.
+// let number = [2, 56, 5, 65, 6, 9, 1, 0, 77, -2];
+// let numberSquared = 0;
+
+// for (let index = 0; index < number.length; index++) {
+//     const element = number[index] * number[index];
+
+//     numberSquared += element 
+    
+// }
+// console.log(numberSquared);
+
+// 12. Дан массив с числами. Найдите среднее арифметическое его элементов (сумма элементов, делить на количество)
+let arr = [2, 56, 5, 65, 6, 9, 1, 0, 77, -2];
+let average = (numbers) => {
+    let sum = 0;
+    for (let index = 0; index < numbers.length; index +=1) {
+   sum += numbers[index];    
+}
+return sum / numbers.length
+};
+console.log(average(arr));
+
+
+
+//===============Function========================================
+
+// 1. напишите функцию любую
+
+// function name(params) {
+    
+// }
+
+// 2.  напишите функцию любую и вызовите ее
+
+// function name() {
+//     console.log("Hello");   
+// }
+// name()
+
+// 3. напишите функцию которая возвращает строку
+
+// function test() {
+//     return 'Great Britain'
+// }
+// console.log(test());
+
+// 4. напишите функцию которая возвращает возраст ваш
+
+// function age () {
+//     let a = prompt('Write your age');
+//     return a; 
+// }
+// const result = age()
+//  console.log(age());
+
+ //5. напишите функцию которая возвращает ваше имя и прибавляет к нему слово “Красавчик/ица”)
+// function name() {
+//     let name = prompt("Write your name")
+//     return name + " " + "Beuatiful"
+// }
+
+// console.log(`${name()} `);
+
+// 6. напишите функцию которая делает тоже самое но чтобы имя можно было поменять (используйте аргумент функции)
+
+// function name(name) {
+//     let nameAndComp = name + " Beautiful";
+//     return nameAndComp    
+// }
+// console.log(name("Maksym"));
+
+// 7. напишите функцию которая возвращает ваше имя, прибавляет к нему слово “Красавчик/ица” и прибавляет к этой строке цифру, которую мы тоже передаем в функцию снаружи через аргумент
+// function name(name, age) {
+//     let nameAndComp = name  + " Beautiful " + age;
+//     return nameAndComp
+// }
+// console.log(name("Alona", 25));
+
+// 8. - напишите функцию без аргументов и сохраните ее в переменную а потом сделайте вызов функции из переменной
+
+// function temp () {
+//     return "temp"
+//     console.log("temp");
+// }
+// let a = temp   
+
+// console.log(a());
+
+// functionTemp = function(){                     //вариант2
+//     console.log("temp of function");
+// }
+// functionTemp()
+
+// напишите функцию с 3мя аргументами и сохраните ее в переменную а потом сделайте вызов функции из переменной
+
+// functionTemp = function (a, b, c) {
+    
+//     console.log("temp");
+    
+// }
+// // let a = temp;
+// functionTemp(10, 15, 20);
+
+
+
+    </script>
+</body>
+</html>
