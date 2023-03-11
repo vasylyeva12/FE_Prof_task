@@ -112,16 +112,17 @@
 // }
 // console.log(numberSquared);
 
-// 12. Дан массив с числами. Найдите среднее арифметическое его элементов (сумма элементов, делить на количество)
-let arr = [2, 56, 5, 65, 6, 9, 1, 0, 77, -2];
-let average = (numbers) => {
-    let sum = 0;
-    for (let index = 0; index < numbers.length; index +=1) {
-   sum += numbers[index];    
-}
-return sum / numbers.length
-};
-console.log(average(arr));
+// 12. Дан массив с числами. Найдите среднее арифметическое его элементов (сумма элементов,
+// делить на количество)
+// let arr = [2, 56, 5, 65, 6, 9, 1, 0, 77, -2];
+// let average = (numbers) => {
+//     let sum = 0;
+//     for (let index = 0; index < numbers.length; index +=1) {
+//    sum += numbers[index];    
+// }
+// return sum / numbers.length
+// };
+// console.log(average(arr));
 
 
 
@@ -179,7 +180,7 @@ console.log(average(arr));
 // }
 // console.log(name("Alona", 25));
 
-// 8. - напишите функцию без аргументов и сохраните ее в переменную а потом сделайте вызов функции из переменной
+// 8. - напишите функцию без аргументов и сохраните ее в переменную, а потом сделайте вызов функции из переменной
 
 // function temp () {
 //     return "temp"
@@ -194,7 +195,8 @@ console.log(average(arr));
 // }
 // functionTemp()
 
-// напишите функцию с 3мя аргументами и сохраните ее в переменную а потом сделайте вызов функции из переменной
+// 9. напишите функцию с 3мя аргументами и сохраните ее в переменную а потом сделайте вызов 
+//функции из переменной
 
 // functionTemp = function (a, b, c) {
     
@@ -204,7 +206,59 @@ console.log(average(arr));
 // // let a = temp;
 // functionTemp(10, 15, 20);
 
+// 10. напишите функцию которая в качестве аргумента принимает массив строк и возвращает
+// нам число равное длинне массива
+const arrayStrings = ['Hello', 'Goodbye', 'Bye', 'Hi'];
 
+function giveArrayLength(array) {
+    return array.length;
+}
+console.log(giveArrayLength(arrayStrings)); 
+
+// 11. напишите функцию и сохраните ее как свойство объекта, а потом вызовите из объекта
+// через точку
+
+// let user = {
+//     name: 'Alona',
+//     age: '46'
+// };
+
+// user.sayHello  = function () {
+//     console.log(`${this.name} 'Hello'`);    
+// }
+
+// user.sayHello()
+
+
+
+// 12. напишите функцию и сохраните ее как свойство объекта, потом создайте еще объект и 
+//сохраните из предыдущего объекта функцию в свойство нового объекта а потом вызовите из
+// нового объекта через точку (если не поняли то я вас понимаю)) сам запутался пока писал)
+
+// let user = {
+//     name: 'Alona',
+//     age: '46'
+// };
+// user.friend = 'Sergey'
+// user.getMyFriend  = function () {
+//     return user.friend();    
+// }
+// console.log(user.friend());
+
+//=========================================================
+const user = {
+    age: 20,
+    increaceAge: function () {
+        user.age += 1;
+    },
+};
+
+user.age = 35;
+console.log(user.age);
+user.increaceAge();
+user.increaceAge();
+user.increaceAge();
+console.log(user.age);
 
     </script>
 </body>
