@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <span>
+        <p></p>
+    </span>
+
+    <script>
+    // Задача написать функцию которая принимает 2 аргумента
+    // первый - функция, второй - число
+    // и надо выполнить функцию из первого аргумента столько раз сколько у нас число во втором аргументе
+    // myInterval(() => {}, 10)
+
+    function myInterval(func, number) {
+        for (let i = 0; i < number; i++) {
+            func();   
+           
+        }
+      
+    }
+
+    const getMyName = () => {
+        // console.log('Alona');
+    }
+
+
+    // console.log(myInterval(getMyName, 1));
+    // const myFunc = () => {
+    //   console.log(Math.random());
+    // }
+    // myInterval(myFunc, 10);
+    function changeName(newName) {
+        document.body.innerHTML = `<p>${NewName}</p>` 
+        
+    }
+    changeName("Alona")
+
+    // Написать функцию, которая вернет нужный элемент из ДОМ дерева getElementByTag("p")
+
+
+    const getElementByTag = (tag) => {
+        return document.querySelector(tag)
+
+    }
+
+    console.log(getElementByTag("div"));
+    </script>
+</body>
+</html>
