@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 340px 10px 312px;
+}
+/* .header_logo{
+    margin-left: 312px;
+    margin-bottom: 10px;
+} */
+
+.header_social{
+    display: flex;
+    align-items: center;
+
+}
+
+.header_social img:not(:last-child) {
+    margin-right: 60px;
+}
+
+/* .header_social img:last-child {
+    margin-right: 0px;
+} */
+
+.main {
+    background-color: #4FBFA5;
+    height: 700px;
+    padding: 23px 310px 0 315px;
+    /* width: 1920px; */
+}
+
+.main_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+}
+.main_button {
+    padding: 10px 51px;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    border: none;
+    
+}
+
+.main_head {
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+   margin: 52px 312px 57px 316px;
+}
+
+.main_text {
+    
+    margin-right: 133px;
+    color: white;
+}
+
+h1 {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-size: 48px;
+}
+
+.main_text p  {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 416px;
+   
+}
+
+.main_head_button {
+    background-color: #00868A;
+    padding: 15px 25px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+
+.offers {
+    padding: 146px 312px 250px;
+
+}
+
+h2 {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #00868A;
+}
+
+.offers_imag {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.item:not(:last-child) {
+    margin-right: 24px;
+
+}
+
+.item p{
+    
+    color: white;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-size: 21px;
+    
+}
+
+.offers_text {
+    margin-top: -5px;
+    height: 114px;
+    padding: 25px 95px 25px 30px;
+    background-color: #00868A;
+}
+
+footer {
+    width: 1295px;
+    height: 91px;
+    margin: 128px 313px 31px 313px;
+    padding-right: 40px;
+
+}
+
+.footer_social {
+    display: flex;
+    justify-content: end;  
+    align-items: center;    
+}
+
+.item:not(:first-child) {
+   margin-left: 65px;
+}
+
+
+
+
+
+
+
+
+
+

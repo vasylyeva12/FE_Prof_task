@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // Дан массив с числами. Создайте новый массив, состоящий из квадратов этих чисел
+    // const arr = [5, 6, 7, 8, 9];  
+    // let square_number = [];
+
+    // arr.forEach(el => square_number.push(el ** 2))
+    // console.log(square_number);
+
+    // задача - написать функцию myForEach чтобы она работала
+    // также как forEach у массива
+    // myForEach в отличие от forEach принимает 2 аргумента (массив и функцию)
+
+    const array = [1, 2, 3, 4];
+
+    function myForEach(arr, callback) {
+        for (let i = 0; i < array.length; i++) {
+            const element = array[i];
+            
+        }
+        
+    }
+
+    
+    // array.forEach((item) => {
+    //    console.log(item);
+    // })
+
+    // const myForEach = [];
+    // array.forEach(function (item) {
+    //     myForEach.push(item ** 2);
+    // })
+    console.log(myForEach);
+
+    myForEach(array, (item) => {
+      console.log(item);
+    });
+
+    </script>
+</body>
+</html>
