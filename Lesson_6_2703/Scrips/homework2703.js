@@ -78,7 +78,9 @@ const adultActivUsers = users
 // ****
 // 1. Сформировать новый массив, где пользователи будут отсортированы по возрасту (.sort())
 
-const usersAge = users.map(users => users.age).sort((a,b) => a - b)
+const usersAge = users.map(users => users).sort((a,b) => a.age - b.age)
+const usersAge1 = [...users].sort((a,b) => a.age - b.age)
+
 
 // console.log(usersAge);
 
@@ -87,3 +89,17 @@ const usersAge = users.map(users => users.age).sort((a,b) => a - b)
 const sum = users.reduce((acc, el) => acc + el.age, 0)
 
 console.log(sum);
+
+const sum_age1 = users.reduce((acc, { age }) => acc + age, 0);
+
+
+// 1. Сформировать новый массив, где пользователи будут отсортированы по возрасту (.sort())
+
+const sorted_users = users.slice().sort((a, b) => a.age - b.age);
+const sorted_users1 = users.map(el => el).sort((a, b) => a.age - b.age);
+const sorted_users2 = [...users].sort((a, b) => a.age - b.age);
+
+const users_copy = [...users];
+
+console.log(users);
+console.log(users_copy);
