@@ -92,24 +92,45 @@ ul {
 
 .servises {
     width: 62%;
-    margin: 100px auto;
-    
+    margin:0px auto;
+    display: flex;
+    padding-bottom: 102px;
 }
 
-.services-card {
-    display: flex;
-   
-}
 
-.servises-mobile-web {
+
+.services-card-smart {
     display: flex;
-    
     margin-bottom: 82px;
+
+}
+.services-card-layers {
+    display: flex;
+
 }
 
-.servises-layers-quality {
-    display: flex;
+.services-card-mon {
+display: flex;
+margin-bottom: 82px;
 }
+
+.services-card-test {
+    display: flex;
+
+}
+
+.servises-mobile-layers {
+    margin-right: 129px;
+    /* display: flex;     */
+    /* margin-bottom: 82px; */
+
+}
+
+.servises-monitor-quality {
+   margin-right: 277px;
+}
+
+
 
 .smartphone {
     margin-right: 67px;
@@ -131,6 +152,7 @@ ul {
     font-family: Ubuntu;
     font-size: 28px;
     font-weight: 400;
+    width: 268px;
 }
 
 .servises-text {
@@ -138,6 +160,7 @@ ul {
     font-family: Ubuntu;
     font-size: 14px;
     font-weight: 400;
+    width: 292px;
     
 }
 .footer {
