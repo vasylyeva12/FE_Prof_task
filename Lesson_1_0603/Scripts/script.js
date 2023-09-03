@@ -4,9 +4,9 @@
 
 
 // const b = 12;
-// b = 120; так делать нельзя
+// // b = 120; //так делать нельзя
 // console.log(b);
-//Если массив переназначен через push, то можно измеить содержимое объекта
+// //Если массив переназначен через push, то можно измеить содержимое объекта
 
 // const numbers = [1, 2, 3, 4, 5]
 // numbers.push(6);
@@ -75,11 +75,12 @@ const numbers = [6, 7, 1, -10, 78, 18, -5, -38, 9];
         
 //     }      
 // }
+// console.log(positiv_number);
 
 //=====Через тернарный оператор=============
 
 // for (let index = 0; index < numbers.length; index++) {
-//     numbers[index]>0 ? positiv_number.push(numbers[index]) : ''        
+//     numbers[index]>0 ? positiv_number.push(numbers[index]) : '';       
 //     }   
 
 //2. Сформировать новый массив, в который попадут все числа numbers умноженные на 2

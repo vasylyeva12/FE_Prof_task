@@ -2,7 +2,7 @@
 
 
 for (let index = 2; index <= 100; index++) {
-    let isPrime = true
+    let isPrime = true //создаем переменную и присваиваем ей  true
     
     // Проверка, является ли число простым
 for (let j = 2; j < index; j++) {
@@ -14,7 +14,7 @@ for (let j = 2; j < index; j++) {
 // Если число простое, выводим его в консоль
 
 if (isPrime) {
-    // console.log(index);    
+    console.log(index);    
 }  
    
 }

@@ -2,7 +2,7 @@
 
 // let sum = 0;
 // for (let index = 20; index <= 35; index++) {
-//     sum+=index    
+//     sum+=index
     
 // }
 // console.log(sum);
@@ -11,19 +11,19 @@
 
 // let mult = 1;
 // for (let index = 10; index <= 15; index++) {
-//     mult *=index   
+//     mult *=index
     
 // }
 
 // console.log(mult);
 
 // const numbers = [12, 6, 56, -6, -5, 25, 12, -14, 8]
-// const positive_numbers = [] 
+// const positive_numbers = []
 
 //     for (let index = 0; index < numbers.length; index++) {
 //         if(numbers[index]>0){
 //             positive_numbers.push = numbers[index]
-//         }        
+//         }
 //     }
 
 // console.log(positive_numbers);
@@ -85,7 +85,7 @@
 
 
  // 7. Сформировать новый массив, состоящий их последних цифр чисел
- const numbers = [15, 6, 5, -6, -5, 25, 12, -14, 8, 35, 10]
+//  const numbers = [15, 6, 5, -6, -5, 25, 12, -14, 8, 35, 10]
 //  const last_numbers = []
 
 //  for (let index = 0; index < numbers.length; index++) {
@@ -95,9 +95,59 @@
 
 // 8. Сформировать новый массив, состоящий их последних цифр чисел (без -)
 
- const last_numbers2 = []
+//  const last_numbers2 = []
 
+//  for (let i = 0; i < numbers.length; i++) {
+//         last_numbers2.push(numbers[i] < 0 ? numbers[i] * -1 % 10 : numbers[i] % 10)
+//  }
+//  console.log(last_numbers2);
+
+let sum = 0;
+for (let i = 20; i <=35; i++) {
+      sum +=i;      //sum = sum + i 
+}
+// console.log(sum);
+
+let mult = 1;
+for (let i = 10; i <=15; i++) {
+       mult *= i;       
+}
+// console.log(mult);
+
+const numbers = [1, 5, -7, -88, 9, 44, 15, 35, -5]
+const numbers_positive = [];
  for (let i = 0; i < numbers.length; i++) {
-        last_numbers2.push(numbers[i] < 0 ? numbers[i] * -1 % 10 : numbers[i] % 10)
- }
- console.log(last_numbers2);
+        numbers[i] > 0 ? numbers_positive.push(numbers[i]) : '';
+       
+}
+//  console.log(numbers_positive);
+
+const numbers_even = [];
+for (let index = 0; index < numbers.length; index++) {
+       numbers[index] < 0 && numbers[index] % 2 === 0 ? numbers_even.push(numbers[index]) : '';
+      
+}
+// console.log(numbers_even);
+
+const numbers_five = [];
+for (let i = 0; i < numbers.length; i++) {
+       numbers[i] % 5 === 0 && numbers[i] !==10 ? numbers_five.push(numbers[i]) : '';      
+       
+}
+// console.log(numbers_five);
+
+const numbers_last = [];
+
+for (let i = 0; i < numbers.length; i++) {
+       numbers_last.push(numbers[i] % 10);
+       
+}
+console.log(numbers_last);
+
+const numbers_last2 = [];
+
+for (let i = 0; i < numbers.length; i++) {
+       numbers_last2.push(numbers[i] < 0 ? numbers[i] * -1 % 10 : numbers[i] % 10);
+       
+}
+console.log(numbers_last2);

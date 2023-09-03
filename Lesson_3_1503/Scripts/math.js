@@ -8,7 +8,7 @@
  const f = Math.floor(4.73);//4 всегда вниз
  const g = Math.round (4.73); // 5 по правилам математики
 
- const h = Math.pow(6,2); // возводим в степень, первое число основание, второе - степень
+ const h = Math.pow(6, 2); // возводим в степень, первое число основание, второе - степень
  const i = Math.sqrt(36); // 6 находит квадратный корень
  const j = Math.random(); // возвращает случайное дробное число от 0 до 1 (не включая единицу)
 
@@ -97,4 +97,13 @@ const getLongWords = arr => {
       return result
 }
 
-console.log(getLongWords(greetings));
+// console.log(getLongWords(greetings));
+
+const numbers1 = [1, 5, -7, -88, 9, 44, 15, 35, -5, 10];
+const num_last = [];
+
+for (let i = 0; i < numbers1.length; i++) {
+    
+        num_last.push(Math.abs(numbers1[i] % 10))
+    }
+  // console.log(num_last);

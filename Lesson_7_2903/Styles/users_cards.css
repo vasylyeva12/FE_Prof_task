@@ -1,0 +1,15 @@
+/* border, border-radius, padding, background-color */
+.cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ .card_elem {
+    width: 200px ;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+   
+}
+

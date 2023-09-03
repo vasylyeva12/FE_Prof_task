@@ -15,14 +15,17 @@ const creatNewArray = arr => {
     }
     return result
 }
-console.log(creatNewArray ([2,3,4,5]));
+// console.log(creatNewArray ([2,3,4,5]));
 
+//Напишите функцию, которая принимает строку и возвращает новую строку, в которой все гласные заменены 
+//на символ '*'
 
-const changeletters = str => {
+const changeLetters = str => {
     let new_str = '';
 
     for (let i = 0; i < str.length; i++) {
-        if(str[i].tolowerCase() === 'a' || str[i].tolowerCase() === 'e' || str[i].tolowerCase() ==='i' || str[i].tolowerCase() === 'o' || str[i].tolowerCase() ===' u' || str[i].tolowerCase() === 'y') {
+        if (str[i].tolowerCase() === 'a' || str[i].tolowerCase() === 'e' || str[i].tolowerCase() === 'i' ||
+            str[i].tolowerCase() === 'o' || str[i].tolowerCase() === ' u' || str[i].tolowerCase() === 'y') {
             new_str +='*'   
         }else{
             new_str+= str[i]
@@ -32,8 +35,8 @@ const changeletters = str => {
     }
     return new_str
 }
-console.log(changeletters('hello'));
-console.log(changeletters('GOOD morgin'));
+console.log(changeLetters('hello'));
+console.log(changeLetters('GOOD morgin'));
 
 // Напишите функцию, которая принимает строку и возвращает новую строку, в которой все буквы заглавные
 
@@ -48,6 +51,8 @@ const upLetters = str => {
 
 const upLetters1 = str => str.toUpperCase()
 
+//Напишите функцию, которая принимает массив чисел и возвращает среднее значение
+
 const getAvgNum = arr => {
     let sum1 = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -56,6 +61,6 @@ const getAvgNum = arr => {
     }
     return sum1 / arr.lenght
 }
-console.log(getAvgNum (3, 5));
-console.log(getAvgNum (3, 5, 6, 8));
+console.log(getAvgNum ([3, 5]));
+console.log(getAvgNum ([3, 5, 6, 8]));
 

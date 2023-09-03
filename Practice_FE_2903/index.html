@@ -8,18 +8,101 @@
 </head>
 <body>
     <script>
-        const user = {
-      name: "Sergey",
-      age: 100,
-      salary: 10000000,
-      profession: "surgery",
-      music: "Rock",
-      /// 100 properties,
-    };
+    //     const user = {
+    //   name: "Sergey",
+    //   age: 100,
+    //   salary: 10000000,
+    //   profession: "surgery",
+    //   music: "Rock",
+    //   /// 100 properties,
+    // };
 
-    const { name, age, ...other } = user;
+    // const { name, age, ...other } = user;
 
-    console.log(name, age, other);
+    // console.log(name, age, other);
+
+    const nums = [5, 32, 334, 25, 58, 85];
+    const nums2 = [1 ,2, 4, 5, 6];
+    // console.log(nums); // [5, 32, 334, 25, 58, 85]
+    // console.log(...nums); // 5 32 334 25 58 85
+    
+    const result = [...nums, ...nums2]
+    const result1 = nums.concat(nums2) // [5, 32, 334, 25, 58, 85, 1 ,2, 4, 5, 6]
+    // console.log(result);
+
+    //=======.reduce======
+
+    const array1 = ['10', '15', '20']
+    const string = '10 20 15'
+
+    const result2 = array1.reduce((acc, current) => {
+        acc[current] = current;
+        // console.log(acc, current);
+        return acc
+        }, {})
+    //  console.log(result2);
+
+    // const array3 = [1, 2, 3, 4, 5, 6];
+
+    // const result3 = array.reduce((acc, num) => {
+    //   return (acc += num);
+    // }, 0);
+
+    // console.log(result3);
+
+
+    const users = [
+      {
+        name: "Sergey",
+        age: 10,
+      },
+      {
+        name: "Anrey",
+        age: 30,
+      },
+    ];
+
+    const ageSum = users.reduce ((acc, el) => (acc + el.age), 0);
+    console.log(ageSum);
+
+    /*
+      ageSum -> сумму возрастов пользователей (решить с помощью reduce)
+    */
+
+    const users2 = [
+      {
+        name: "Sergey",
+        age: 10,
+      },
+      {
+        name: "Anrey",
+        age: 30,
+      },
+    ];
+
+    const users3 = users2.reduce ((acc, el) => (acc + (el.name + " " + el.age)))
+    console.log(users3);
+
+    const ageSum1 = users.reduce((acc, user) => {
+      return acc + user.name + " " + user.age + " ";
+    }, "");
+
+    console.log(ageSum1);
+
+    /*
+      ageSum -> строку "Sergey 10 Andrey 30" (решить с помощью reduce)
+    */
+    
+    // =====.sort=============
+    const array = [1,2,3,4,5];
+
+    array.sort((a, b) => b - a)
+    array.sort((a, b) => b.value - a.value) // если объект
+    
+    // console.log(array);
+
+
+
 
     </script>
 </body>

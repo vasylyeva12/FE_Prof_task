@@ -26,4 +26,4 @@
 // 1. Написать функцию, которая принимает в качестве аргумента 2 числа, а возвращает их сумму
 
 const multNum_arrow1 = (num1, num2) => num1 + num2
-console.log(multNum_arrow1(5, 10));
+// console.log(multNum_arrow1(5, 10));
