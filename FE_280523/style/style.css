@@ -1,8 +1,8 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 
 h1 {
@@ -17,7 +17,7 @@ ul {
 }
 
 
-button {
+.nav-button {
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -61,6 +61,85 @@ button {
     gap: 37px;
 }
 
+.hero-main {
+    width: 62%;
+    margin: 0 auto;
+}
+.hero-title {
+    color: #202020;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 35px; 
+    
+}
+.hero-text {
+    margin-bottom: 70px;
+}
+.hero-button {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #5528FF;
+    padding: 16px 58px 11px 58px;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 111px;
+}
+
+.servises {
+    width: 62%;
+    margin: 100px auto;
+    
+}
+
+.services-card {
+    display: flex;
+   
+}
+
+.servises-mobile-web {
+    display: flex;
+    
+    margin-bottom: 82px;
+}
+
+.servises-layers-quality {
+    display: flex;
+}
+
+.smartphone {
+    margin-right: 67px;
+}
+
+.monitor {
+    margin-right: 50px;
+}
+
+.layers {
+    margin-right: 44px;
+}
+
+.test {
+    margin-right: 66px;
+}
+.servises-title {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.servises-text {
+    color: #B2B2B2;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
 .footer {
     height: 100px;
     display: flex;
