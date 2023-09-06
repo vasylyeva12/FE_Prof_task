@@ -4,13 +4,97 @@
     box-sizing: border-box;
 }
 
-.header-nav {
-    background-color: #7fc00f;
+nav {
+    
     display: flex;
     border: 2px solid #000000;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1113px;
     margin: 0 auto;
 }
+
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav .connect{
+    width: 175px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#services {
+    margin: 40px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#services > div {
+    border: 2px solid black;
+    width: 350px;
+    height: 360px;
+    background-image: url('../media/Rectangle\ 2.png');
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+#services > div button{
+    width: 175px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    transition: background-color, color, transform;
+    transition-duration: 0.5s;
+    
+    }
+
+    #services > div button:hover{
+        background-color:white;
+        color: black;
+        transform: scale(1.1);
+    }
+
+ #services > div:hover button {
+    transform: scale(1.1);
+     }
+
+    #services .sticker {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        background-color: #b53535;
+        padding: 5px 10px;
+        transform: translateY(-15px);
+        transition: background-color 0.5s;
+    }
+        #services > div:hover .sticker{
+            background-color:rgb(235, 63, 11);
+        }

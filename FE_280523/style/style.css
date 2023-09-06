@@ -76,6 +76,11 @@ ul {
 }
 .hero-text {
     margin-bottom: 70px;
+    color: #4F4F4F;
+    font-family: Ubuntu;
+    /* font-size: 32px; */
+    font-weight: 400;
+    width: 62%;
 }
 .hero-button {
     border: none;
@@ -92,45 +97,22 @@ ul {
 
 .servises {
     width: 62%;
+    /* height: 422px; */
     margin:0px auto;
     display: flex;
     padding-bottom: 102px;
+    gap: 82px;
+    flex-wrap: wrap;
 }
 
 
 
-.services-card-smart {
+.services-card {
     display: flex;
-    margin-bottom: 82px;
+    flex-grow: 1;
+   
 
 }
-.services-card-layers {
-    display: flex;
-
-}
-
-.services-card-mon {
-display: flex;
-margin-bottom: 82px;
-}
-
-.services-card-test {
-    display: flex;
-
-}
-
-.servises-mobile-layers {
-    margin-right: 129px;
-    /* display: flex;     */
-    /* margin-bottom: 82px; */
-
-}
-
-.servises-monitor-quality {
-   margin-right: 277px;
-}
-
-
 
 .smartphone {
     margin-right: 67px;
